@@ -1,4 +1,4 @@
-Simulation of a reservoir with arduino + state design pattern
+# Simulation of a reservoir with arduino + state design pattern
 
 ![Screenshot 2024-03-27 031502](https://github.com/MohamedAmr982/ReservoirSimulator/assets/16720762/8aebc957-b645-405e-a84f-65d1fdd39d03)
 
