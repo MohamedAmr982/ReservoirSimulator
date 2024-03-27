@@ -15,3 +15,6 @@ The system obeys the following state diagram:
 The state machine was implemented using state design pattern in C:
 ![Reservoir (1)](https://github.com/MohamedAmr982/ReservoirSimulator/assets/16720762/25498082-f155-498e-b03c-8300133e89a8)
 
+Where 'Context' is a struct with all important variables in the system, which delegates state-specific logic (variable updating according to the current state, transition between states based on conditions, etc.) to the 'State' struct. The State by default has pointers to default behavior functions.
+
+There are three concrete states in the system (idle, charging, and discharging), each has functions that override the default state behavoir. Each state has its own 'constructor' (idle(), charging(), and discharging()) which are passed a state struct. To implement the 'overriding', the constructor function just replaces the default function pointer with a pointer to the concrete function of the state.
